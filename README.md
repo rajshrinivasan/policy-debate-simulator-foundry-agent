@@ -1,4 +1,6 @@
-# Project 04 — Policy Debate Simulator
+# Policy Debate Simulator
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## Pattern
 **Hierarchical Multi-Agent — adversarial (ConnectedAgentTool)**
@@ -103,7 +105,7 @@ completes (including all sub-agent calls) and returns the finished state.
 # 1. Create and activate virtual environment
 python -m venv venv
 source venv/Scripts/activate      # Windows
-# source venv/bin/activate        # Mac/Linux
+source venv/bin/activate          # Mac/Linux
 
 # 2. Install dependencies
 pip install -r requirements.txt
@@ -153,7 +155,7 @@ adversarial behaviour comes entirely from the prompts, not the SDK.
 ## File structure
 
 ```
-04-policy-debate-simulator/
+policy-debate-simulator-foundry-agent/
 ├── agent.py
 ├── prompts/
 │   ├── conductor_prompt.txt    # Orchestration instructions
@@ -161,7 +163,14 @@ adversarial behaviour comes entirely from the prompts, not the SDK.
 │   ├── opponent_prompt.txt     # Argue AGAINST the policy
 │   └── judge_prompt.txt        # Score and verdict rubric
 ├── requirements.txt
-├── .env.example
-├── .env
+├── .env.example                # Template — copy to .env and fill in values
+├── .gitignore
+├── LICENSE
 └── README.md
 ```
+
+---
+
+## License
+
+MIT — see [LICENSE](LICENSE).
